@@ -1,0 +1,149 @@
+#Header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+}
+
+#header_h1 {
+  color: #ffffff;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header_list_item {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  list-style: none;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shadow__btn {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-color: transparent;
+  border: 3px solid #be77fb;
+}
+
+.shadow__btn:hover {
+  background-color: #be77fb;
+}
+
+#link_under {
+  height: 2px;
+  width: 0%;
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  background-color: #be77fb;
+}
+
+.header_list_item:hover #link_under {
+  width: 100%;
+}
+
+#DropMenu {
+  display: none;
+}
+
+
+@media screen and (max-width:900px) {
+
+  #header_h1 {
+    font-size: 25px;
+  }
+
+  .header_list_item {
+    font-size: 12px;
+    margin: 0px 5px;
+  }
+
+  .shadow__btn {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width:650px) {
+
+  #header_list,
+  .shadow__btn {
+    display: none;
+  }
+
+  #cv_btn {
+    display: block;
+  }
+
+  /* #Menu_btn {
+    color: white;
+    font-size: 25px;
+    margin: auto 20px;
+  }
+
+  #DropMenu {
+    display: flex;
+    height: 400px;
+    max-width: 300px;
+    border-radius: 20px;
+    min-width: 200px;
+    width: 80%;
+    background: linear-gradient(120deg, #8608b4, #492fed 55%, #bd6fda);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+
+  .header_dropmenu_list_item {
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  .shadow_dropmenu_btn {
+    margin: 10px auto;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+  } */
+
+}

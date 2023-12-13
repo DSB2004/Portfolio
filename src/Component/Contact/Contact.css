@@ -1,0 +1,52 @@
+#Contact {
+    background: linear-gradient(120deg, #8608b4, #492fed 55%, #bd6fda);
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+.Contact_list {
+    font-weight: 900;
+    margin: 0px 20px;
+    color: White;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 400px; */
+}
+
+#contact_icon {
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px;
+
+}
+
+@media screen and (max-width:700px) {
+
+    .Contact_list {
+        font-weight: 500;
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+
+    #contact_icon {
+        margin: 5px;
+        padding: 5px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    #Contact {
+        flex-direction: column;
+    }
+}

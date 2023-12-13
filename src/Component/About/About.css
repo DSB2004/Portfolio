@@ -1,0 +1,109 @@
+#About {
+  min-height: 60%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+
+#About h1 {
+  font-size: 60px;
+  margin: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+#about_under {
+  width: 30%;
+  height: 4px;
+  background-color: #af5bd1;
+}
+
+#About p {
+  margin: 5px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+#about_icon_div {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px auto;
+}
+
+.about_icon {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 40px;
+  color: white;
+  transition: all 500ms ease-in-out;
+  border: 2px solid white;
+
+}
+
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.about_icon:hover #about_icon_symbol {
+  animation: moveup 300ms ease-in-out;
+  color: white;
+}
+
+#github:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+#linkedin:hover {
+  background: rgb(0, 105, 241);
+}
+
+#leetcode:hover {
+  background: linear-gradient(135deg, #fcaf45, rgb(121, 101, 61), #000000);
+}
+
+@media screen and (max-width:1000px) {
+  #About {
+    margin: 100px auto;
+    width: 95%;
+
+  }
+}
+
+@media screen and (max-width:700px) {
+  #About h1 {
+    font-size: 40px;
+  }
+
+  #About {
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+  }
+}
