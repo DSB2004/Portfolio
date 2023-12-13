@@ -63,7 +63,7 @@ export default function Main() {
           <a href={CV} download={CV}>
             <button className="shadow__btn" id="cv_btn">
               Download CV
-            </button>
+            </button >
           </a>
         </div>
         <img src={Pic} alt="" id="main_img" />
