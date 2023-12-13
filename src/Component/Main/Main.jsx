@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Pic from "../../Media/Main-bg.png";
-
+import CV from "../../Modules/CV.pdf"
 export default function Main() {
   const [text, setText] = React.useState("");
   const content = ["Frontend Developer", "Backend Developer", "Programmer"]
@@ -60,9 +60,11 @@ export default function Main() {
             Dedicated to building versatile web applications that provide an
             enhanced digital experience and continually expanding my expertise."
           </p>
-          <button className="shadow__btn" id="cv_btn">
-            Download CV
-          </button>
+          <a href={CV} download={CV}>
+            <button className="shadow__btn" id="cv_btn">
+              Download CV
+            </button>
+          </a>
         </div>
         <img src={Pic} alt="" id="main_img" />
       </div>
